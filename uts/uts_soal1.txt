@@ -1,0 +1,16 @@
+Penjelasan Pentingnya Algoritma dan Flowchart
+Mengapa harus dibuat terlebih dahulu:
+1.	Perencanaan yang Terstruktur - Membantu programmer memahami alur logika sebelum coding
+2.	Menghindari Error - Kesalahan logika dapat dideteksi sejak awal
+3.	Dokumentasi - Memudahkan orang lain memahami program
+4.	Efisiensi Waktu - Mengurangi trial error saat menulis kode
+5.	Solusi Terorganisir - Memecah masalah kompleks menjadi langkah sederhana
+Contoh Masalah Sederhana: Menentukan Bilangan Ganjil atau Genap
+ALGORITMA:
+1. Mulai
+2. Input bilangan dari user
+3. Bagi bilangan dengan 2
+4. Jika sisa bagi = 0, maka bilangan GENAP
+5. Jika sisa bagi ≠ (bukan) 0, maka bilangan GANJIL
+6. Tampilkan hasil
+7. Selesai
