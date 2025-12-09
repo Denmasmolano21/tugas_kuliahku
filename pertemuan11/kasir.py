@@ -36,10 +36,10 @@ while True:
     
     # Setiap 2 barang, tanyakan apakah user ingin lanjut belanja
     if nomor % 2 == 0:
-        pilihan = input(">> Lanjut belanja? (yak/gak): ").lower()
+        pilihan = input(">> Lanjut belanja? (y/n): ").lower()
         print()
-        # Jika jawab 'gak', keluar dari loop
-        if pilihan == "gak":
+        # Jika jawab 'n', keluar dari loop
+        if pilihan == "n":
             break
     
     # Increment nomor barang
