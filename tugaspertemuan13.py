@@ -11,7 +11,7 @@ nama_siswa = []
 
 # List untuk menyimpan nilai siswa
 nilai_siswa = []
-
+11
 print("="*50)
 print("  APLIKASI DAFTAR NILAI SISWA".center(50))
 print("="*50)
