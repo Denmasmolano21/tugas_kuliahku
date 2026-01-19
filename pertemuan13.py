@@ -1,12 +1,16 @@
 def rupiah(angka):
     return f"Rp {angka:,.0f}".replace(",", ".")
 
-print("="*50)
 print("           AGEN BUS PERJALANAN")
-print("="*50)
+print("=" * 50)
 
 nama = input("Masukkan Nama Penumpang : ")
-kode = input("Masukkan Kode Bus [R/S/H] : ").upper()
+
+# contoh input: R01, S02, H03
+kode_input = input("Masukkan Kode Bus [R01/S01/H01] : ").upper()
+
+# ambil 1 karakter pertama dengan slicing
+kode = kode_input[0:1]
 
 # Data Bus
 if kode == "R":
@@ -25,11 +29,12 @@ else:
     print("Kode bus tidak valid!")
     exit()
 
-print("\n" + "="*50)
-print(f"Nama Bus    : {nama_bus}")
-print(f"Tujuan      : {tujuan}")
-print(f"Harga Tiket : {rupiah(harga)}")
-print("="*50)
+print("\n" + "=" * 50)
+print(f"Nama Penumpang : {nama}")
+print(f"Nama Bus       : {nama_bus}")
+print(f"Tujuan         : {tujuan}")
+print(f"Harga Tiket    : {rupiah(harga)}")
+print("=" * 50)
 
 jumlah = int(input("Masukkan Jumlah Beli : "))
 
@@ -40,17 +45,15 @@ total_bayar = total + ppn
 # Hadiah
 hadiah = "Jam Tangan" if jumlah >= 3 else "Tidak Ada"
 
-print("\n" + "="*50)
+print("\n" + "=" * 50)
 print(f"Total Harga : {rupiah(total)}")
 print(f"Hadiah      : {hadiah}")
 print(f"PPN (5%)    : {rupiah(ppn)}")
 print(f"Total Bayar : {rupiah(total_bayar)}")
-print("="*50)
+print("=" * 50)
 
 bayar = int(input("Masukkan Pembayaran : "))
 kembalian = bayar - total_bayar
 
 print(f"Uang Kembalian : {rupiah(kembalian)}")
-print("="*50)
-print("             Terima Kasih")
-print("="*50)
+print("*" * 18 , "Terima Kasih", "*" * 18)
